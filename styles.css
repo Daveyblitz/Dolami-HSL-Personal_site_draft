@@ -1,0 +1,256 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
+nav div.cont {
+    background: linear-gradient(to right, #6eacca, #03344e);
+    height: 15vh;
+}
+
+
+
+label img {
+    margin-left: 15px;
+}
+
+.nbar {
+    display: flex;
+    gap:20px;
+}
+
+
+nav div ul {
+   list-style-type: none;
+   margin-right: 20px;
+   margin-top: 15px;
+}
+
+nav div ul li {
+    display: inline-block;
+    color: #E2E2B6;
+    transition: all 0.3s ease;
+}
+
+nav div ul li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#contact {
+    color: #FFDC7F;
+}
+
+.logo {
+  margin-left: 20px;
+  color: #021526;
+}
+
+
+.cont {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.cont1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: left; 
+    height: 100%; 
+}
+
+.cont2 {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    height: 100%; 
+
+}
+
+.hero-cont {
+    height: 90vh;
+    background-color: #03344e;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-cont > .hero {
+    width: 80%;
+    min-height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: 2px solid ;
+    border-image: linear-gradient(to right, #E2E2B6 0%, #FFBC7F 100%) 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hero-img,.hero-info {
+    width: 48%;
+    margin-top: 0;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img > img {
+
+    max-width: 350px;
+    height: auto;
+    border-radius: 30%;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.hero-text-cont > h1 {
+    color:  #E2E2B6;
+    font-size: 2.1em;
+}
+
+.button {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.hero-text-cont.serif > p {
+  color: #6EACDA;
+  font-family: "Lora", serif;
+  font-weight: 300;
+}
+
+.button > button {
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 2px;
+    background: linear-gradient(to right, #FFBC7F, #FFDC7F);
+    color: #03344e;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 0; 
+}
+
+.button > button::after{
+    content:'';
+    background: linear-gradient(to right, #6EACDA, #03344e);
+    height: 100%;
+    width: 0px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 300ms ease-in-out;
+}
+
+button:hover::after {
+    width: 100%;
+}
+
+button:hover {
+    color:  #E2E2B6;
+}
+
+#carouselExampleAutoplaying > div > div > img  {
+   border-radius: 20px;
+   max-width: 500px;
+   height: auto;
+}
+
+div.hero-info#photo-div h1 img 
+ {
+  margin: 10px;
+  height: 0.75em;
+}
+
+
+
+@media (max-width: 592px) {
+   ul.nbar {
+        display: block;
+    }
+
+    nav div ul li {
+        width: 100%;
+    }
+
+
+    body {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1rem;
+        background-color: #03344e;
+    }
+}
+
+@media (max-width: 778px) {
+    .hero-img > img {
+        max-width: 300px;
+    }
+
+    .cont {
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+    }
+    
+    .logo {
+        margin-left: 0px;
+      }
+    
+      label img {
+        margin-left: auto;
+    }
+    
+
+    nav div.cont {
+        height: auto;
+    }
+
+    .hero-img, .hero-info {
+        width: 100%;
+        margin-top: 10px;
+        min-height: auto;
+    }
+
+    .hero-text-cont > h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+
+}  
+
+.hero {
+    height: auto;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+
+.hero-info {
+    text-align: center;
+    order: -1;
+}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 0 50px;
+            background-color: #f4f4f4;
+        }
+
+        .hero img {
+            max-width: 45%;
+            height: auto;
+        }
+
+        .hero .hero-text {
+            max-width: 50%;
+            text-align: right;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <img src="https://via.placeholder.com/600x400" alt="Hero Image">
+        <div class="hero-text">
+            <h1>Your Hero Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula justo eget metus accumsan, a bibendum nisl commodo.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>
